@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "build": "chmod +x node_modules/.bin/react-scripts && react-scripts build",
+  "build": "react-scripts build",
   "start": "react-scripts start"
 },
   "eslintConfig": {
