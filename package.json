@@ -17,8 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "build": "CI=true npm run custom-build",
-  "custom-build": "react-scripts build",
+  "build": "node node_modules/react-scripts/scripts/build.js",
   "start": "serve -s build"
 },
   "eslintConfig": {
