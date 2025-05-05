@@ -123,6 +123,17 @@ function App() {
           {image ? '✅ 이미지 선택 완료' : '📷 여기에 이미지를 업로드해보세요'}
         </label>
 
+        {/* 선택된 이미지 미리보기 */}
+        {image && (
+          <div className="mt-6 rounded-xl overflow-hidden shadow-md animate-fade-in">
+            <img
+              src={`data:image/jpeg;base64,${image}`}
+              alt="업로드된 이미지"
+              className="w-full object-cover max-h-96"
+            />
+          </div>
+        )}
+
         {/* 캡션 입력 */}
         <textarea
           className="border p-2 mt-4 rounded-xl w-full"
